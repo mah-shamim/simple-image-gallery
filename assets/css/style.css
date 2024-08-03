@@ -1,0 +1,14 @@
+body {
+    background-color: #f8f9fa;
+}
+
+#gallery .col-md-4 {
+    margin-bottom: 20px;
+}
+
+#gallery img {
+    display: block;
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
