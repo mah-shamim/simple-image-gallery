@@ -3,7 +3,7 @@ A fully functional image gallery with upload capabilities using PHP, HTML, jQuer
 
 **Topics:** `php`, `mysql`, `blog`, `ajax`, `bootstrap`, `jquery`, `css`, `image gallery`, `file upload`
 
-![simple-weather-app](./assets/images/simple-blog-platform.png)
+![simple-image-gallery](./assets/images/simple-image-gallery.png)
 
 ### Install Process
 
