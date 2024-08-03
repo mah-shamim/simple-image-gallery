@@ -8,6 +8,8 @@ $(document).ready(function(){
         var file_data = $('#image').prop('files')[0];
         var form_data = new FormData();
         form_data.append('file', file_data);
+        //hide upload section
+        $('#uploadImage').hide();
         $.ajax({
             url: 'src/upload.php', // PHP script to process upload
             type: 'POST',
@@ -25,6 +27,10 @@ $(document).ready(function(){
                 } else {
                     $('#upload-status').html('<div class="alert alert-success">'+jsonData.message+'</div>'); // Display error message
                 }
+                // hide message box
+                autoHide('#upload-status');
+                //show upload section
+                autoShow('#uploadImage');
             }
         });
     });
@@ -47,4 +53,15 @@ function loadGallery() {
             }
         }
     });
+}
+function autoHide(idORClass) {
+    setTimeout(function () {
+        $(idORClass).fadeOut('fast');
+    }, 1000);
+}
+
+function autoShow(idORClass) {
+    setTimeout(function () {
+        $(idORClass).fadeIn('fast');
+    }, 1000);
 }
